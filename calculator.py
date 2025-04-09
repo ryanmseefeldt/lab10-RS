@@ -1,14 +1,10 @@
-"""
-calculator.py
-- Defines functions used to create a simple calculator
+#https://github.com/ryanmseefeldt/lab10-RS.git
+#Partner 1: Ryan
+#Partner 2: Seefeldt
 
-One function per operation, in order.
-"""
-"""
-https://github.com/your-repo-link
-Partner 1: Your Name
-Partner 2: Your Partner's Name
-"""
+'''calculator.py
+- Defines functions used to create a simple calculator
+'''
 
 import math
 
@@ -17,29 +13,29 @@ def square_root(a):
         raise ValueError("Cannot take square root of negative number")
     return math.sqrt(a)
 
-def hypotenuse(a, b):
+def hypo(a, b):
     return math.hypot(a, b)
 
 def add(a, b):
     return a + b
 
-def subtract(a, b):
+def sub(a, b):
     return a - b
 
-def multiply(a, b):
+def mul(a, b):
     return a * b
 
-def divide(a, b):
+def div(a, b):
     if a == 0:
         raise ZeroDivisionError("Cannot divide by zero")
     return b / a
 
-def logarithm(a, b):
+def log(a, b):
     if a <= 0 or a == 1 or b <= 0:
         raise ValueError("Invalid input for logarithm")
     return math.log(b, a)
 
-def exponent(a, b):
+def exp(a, b):
     return a ** b
 
 
